@@ -139,7 +139,7 @@ class IntroPage extends StatelessWidget {
                               mainAxisSize: .min,
                               crossAxisAlignment: .stretch,
                               children: [
-                                if (!hasPresetHomeserver)
+                                if (false && !hasPresetHomeserver)
                                   ElevatedButton(
                                     style: ElevatedButton.styleFrom(
                                       backgroundColor:
@@ -154,13 +154,13 @@ class IntroPage extends StatelessWidget {
                                       L10n.of(context).createNewAccount,
                                     ),
                                   ),
-                                SizedBox(height: 16),
+                                const SizedBox(height: 16),
                                 ElevatedButton(
                                   onPressed: login,
                                   child: Text(L10n.of(context).signIn),
                                 ),
 
-                                if (!hasPresetHomeserver)
+                                if (false && !hasPresetHomeserver)
                                   TextButton(
                                     onPressed: () async {
                                       final client = await Matrix.of(

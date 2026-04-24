@@ -73,13 +73,13 @@ abstract class AppRoutes {
           path: 'sign_in',
           pageBuilder: (context, state) =>
               defaultPageBuilder(context, state, SignInPage(signUp: false)),
-          redirect: loggedInRedirect,
+          redirect: (context, state) => '/home',
         ),
         GoRoute(
           path: 'sign_up',
           pageBuilder: (context, state) =>
               defaultPageBuilder(context, state, SignInPage(signUp: true)),
-          redirect: loggedInRedirect,
+          redirect: (context, state) => '/home',
         ),
         GoRoute(
           path: 'login',

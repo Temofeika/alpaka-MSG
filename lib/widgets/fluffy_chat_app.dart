@@ -13,7 +13,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../utils/custom_scroll_behaviour.dart';
 import 'matrix.dart';
 
-class FluffyChatApp extends StatelessWidget {
+class AlpakaMsgApp extends StatelessWidget {
   final Widget? testWidget;
   final List<Client> clients;
   final String? pincode;

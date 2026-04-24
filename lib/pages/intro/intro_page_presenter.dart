@@ -30,7 +30,15 @@ class _IntroPagePresenterState extends State<IntroPagePresenter> {
   void initState() {
     super.initState();
 
-    if (kIsWeb) _finishOidcLogin();
+    if (kIsWeb) {
+      _finishOidcLogin();
+    } else {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (AppSettings.presetHomeserver.value.isNotEmpty) {
+          _login();
+        }
+      });
+    }
   }
 
   Future<void> _finishOidcLogin() async {

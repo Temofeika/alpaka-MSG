@@ -1,0 +1,40 @@
+name: Build Alpaka APK
+
+on:
+  workflow_dispatch: # Позволяет запускать сборку вручную
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  build:
+    name: Build APK
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'zulu'
+          java-version: '17'
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.24.0' # Используем стабильную версию
+          cache: true
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Build APK
+        run: flutter build apk --release --no-codesign # Сборка без подписи для простоты
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: alpaka-msg-apk
+          path: build/app/outputs/flutter-apk/app-release.apk
