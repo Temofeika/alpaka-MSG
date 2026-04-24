@@ -1,10 +1,10 @@
-import 'package:fluffychat/config/app_config.dart';
-import 'package:fluffychat/config/routes.dart';
-import 'package:fluffychat/config/setting_keys.dart';
-import 'package:fluffychat/config/themes.dart';
-import 'package:fluffychat/l10n/l10n.dart';
-import 'package:fluffychat/widgets/app_lock.dart';
-import 'package:fluffychat/widgets/theme_builder.dart';
+import 'package:alpaka_msg/config/app_config.dart';
+import 'package:alpaka_msg/config/routes.dart';
+import 'package:alpaka_msg/config/setting_keys.dart';
+import 'package:alpaka_msg/config/themes.dart';
+import 'package:alpaka_msg/l10n/l10n.dart';
+import 'package:alpaka_msg/widgets/app_lock.dart';
+import 'package:alpaka_msg/widgets/theme_builder.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:matrix/matrix.dart';
@@ -19,7 +19,7 @@ class AlpakaMsgApp extends StatelessWidget {
   final String? pincode;
   final SharedPreferences store;
 
-  const FluffyChatApp({
+  const AlpakaMsgApp({
     super.key,
     this.testWidget,
     required this.clients,
@@ -55,8 +55,8 @@ class AlpakaMsgApp extends StatelessWidget {
       builder: (context, themeMode, primaryColor) => MaterialApp.router(
         title: AppSettings.applicationName.value,
         themeMode: themeMode,
-        theme: FluffyThemes.buildTheme(context, Brightness.light, primaryColor),
-        darkTheme: FluffyThemes.buildTheme(
+        theme: AlpakaThemes.buildTheme(context, Brightness.light, primaryColor),
+        darkTheme: AlpakaThemes.buildTheme(
           context,
           Brightness.dark,
           primaryColor,

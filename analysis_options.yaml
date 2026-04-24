@@ -32,6 +32,8 @@ linter:
     - use_colored_box
 
 analyzer:
+  enable-experiment:
+    - dot-shorthands
   plugins:
     - dart_code_linter
   errors:

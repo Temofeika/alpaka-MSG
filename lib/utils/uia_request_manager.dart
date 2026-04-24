@@ -1,10 +1,10 @@
 import 'dart:async';
 
-import 'package:fluffychat/l10n/l10n.dart';
-import 'package:fluffychat/widgets/adaptive_dialogs/show_ok_cancel_alert_dialog.dart';
-import 'package:fluffychat/widgets/adaptive_dialogs/show_text_input_dialog.dart';
-import 'package:fluffychat/widgets/fluffy_chat_app.dart';
-import 'package:fluffychat/widgets/matrix.dart';
+import 'package:alpaka_msg/l10n/l10n.dart';
+import 'package:alpaka_msg/widgets/adaptive_dialogs/show_ok_cancel_alert_dialog.dart';
+import 'package:alpaka_msg/widgets/adaptive_dialogs/show_text_input_dialog.dart';
+import 'package:alpaka_msg/widgets/alpaka_msg_app.dart';
+import 'package:alpaka_msg/widgets/matrix.dart';
 import 'package:flutter/material.dart';
 import 'package:matrix/matrix.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -13,7 +13,7 @@ extension UiaRequestManager on MatrixState {
   Future uiaRequestHandler(UiaRequest uiaRequest) async {
     final l10n = L10n.of(context);
     final navigatorContext =
-        FluffyChatApp.router.routerDelegate.navigatorKey.currentContext ??
+        AlpakaMsgApp.router.routerDelegate.navigatorKey.currentContext ??
         context;
     try {
       if (uiaRequest.state != UiaRequestState.waitForUser ||
