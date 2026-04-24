@@ -13,15 +13,15 @@ if (file("google-services.json").exists()) {
 }
 
 dependencies {
-    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.1.4") // For flutter_local_notifications // Workaround for: https://github.com/MaikuB/flutter_local_notifications/issues/2286
-    implementation("androidx.core:core-ktx:1.17.0") // For Android Auto
+    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.1.2") // For flutter_local_notifications
+    implementation("androidx.core:core-ktx:1.13.1") // For Android Auto
 }
 
 
 // Workaround for https://pub.dev/packages/unifiedpush#the-build-fails-because-of-duplicate-classes
 configurations.all {
     // Use the latest version published: https://central.sonatype.com/artifact/com.google.crypto.tink/tink-android
-    val tink = "com.google.crypto.tink:tink-android:1.17.0"
+    val tink = "com.google.crypto.tink:tink-android:1.15.0"
     // You can also use the library declaration catalog
     // val tink = libs.google.tink
     resolutionStrategy {
@@ -76,8 +76,8 @@ android {
 
     buildTypes {
         release {
-            // signingConfig = signingConfigs.getByName("release")
-            isMinifyEnabled = false // Отключаем для ускорения и избежания ошибок R8
+            signingConfig = signingConfigs.getByName("debug")
+            isMinifyEnabled = false
             isShrinkResources = false
             proguardFiles(getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro")
         }

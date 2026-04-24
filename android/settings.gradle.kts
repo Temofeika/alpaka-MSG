@@ -9,6 +9,8 @@ pluginManagement {
             ?: System.getenv("FLUTTER_ROOT")
             ?: System.getenv("FLUTTER_HOME")
 
+        println("Flutter SDK Path: $flutterSdkPath")
+
         require(flutterSdkPath != null) { "Flutter SDK not found. Define location with flutter.sdk in local.properties or with FLUTTER_ROOT/FLUTTER_HOME environment variable." }
         flutterSdkPath
     }
