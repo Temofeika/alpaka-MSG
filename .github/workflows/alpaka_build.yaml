@@ -1,4 +1,4 @@
-name: Build Alpaka APK
+name: Build Alpaka APK (Auto-triggered)
 
 on:
   workflow_dispatch: # Позволяет запускать сборку вручную
