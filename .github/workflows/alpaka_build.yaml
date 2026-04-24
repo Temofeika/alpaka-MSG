@@ -31,7 +31,7 @@ jobs:
         run: flutter pub get --suppress-analytics
 
       - name: Build APK
-        run: flutter build apk --release --no-codesign # Сборка без подписи для простоты
+        run: flutter build apk --release --suppress-analytics # Сборка APK
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
