@@ -83,6 +83,13 @@ dependencies:
 dependency_overrides:
   path: 1.9.0
   async: 2.11.0
+  # To fix 16kb compatiblity in PlayStore. It is fixed in main branch but
+  # not yet published:
+  # https://github.com/google/webcrypto.dart/issues/207
+  webcrypto:
+    git:
+      url: https://github.com/google/webcrypto.dart.git
+      ref: master
 
 dev_dependencies:
   dart_code_linter: ^4.0.2
@@ -107,16 +114,3 @@ flutter:
     - assets/
     - assets/sounds/
     - assets/vodozemac/
-
-# Guidelines for adding a dependency override:
-# 1. Don't do it if you can avoid it or fix it upstream in a manageable time
-# 2. Always link an (upstream?) issue
-# 3. Explain how and when this can be removed (overrides must be temporarily)
-dependency_overrides:
-  # To fix 16kb compatiblity in PlayStore. It is fixed in main branch but
-  # not yet published:
-  # https://github.com/google/webcrypto.dart/issues/207
-  webcrypto:
-    git:
-      url: https://github.com/google/webcrypto.dart.git
-      ref: master
