@@ -1,4 +1,4 @@
-FluffyChat is an open, nonprofit and cute Matrix messenger app for Ubuntu Touch, Android and iOS.
+AlpakaMsg is a cute, open source, nonprofit [[matrix]] client.
 
 Open
 Opensource and open development where everyone can join.
