@@ -83,6 +83,7 @@ dependencies:
 dependency_overrides:
   path: 1.9.0
   async: 2.11.0
+  meta: 1.15.0
   # To fix 16kb compatiblity in PlayStore. It is fixed in main branch but
   # not yet published:
   # https://github.com/google/webcrypto.dart/issues/207
