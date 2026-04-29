@@ -1,0 +1,1 @@
+class SubmitLineIntent extends Intent {}

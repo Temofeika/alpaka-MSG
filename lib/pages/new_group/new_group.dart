@@ -1,0 +1,1 @@
+enum CreateGroupType { group, space }

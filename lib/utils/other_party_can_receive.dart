@@ -1,0 +1,1 @@
+class OtherPartyCanNotReceiveMessages implements Exception {}

@@ -1,0 +1,62 @@
+name: Build Alpaka APK (Auto-triggered)
+
+on:
+  workflow_dispatch: # Позволяет запускать сборку вручную
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  build:
+    name: Build APK
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Free up space
+        uses: ./.github/actions/free_up_space
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'zulu'
+          java-version: '17'
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable' # Используем стабильный канал, так как 3.41.7 не является стандартной версией
+          cache: true
+
+      - name: Setup Rust
+        uses: moonrepo/setup-rust@v1
+        with:
+          targets: aarch64-linux-android, armv7-linux-androideabi, i686-linux-android, x86_64-linux-android
+
+      - name: Flutter Doctor
+        run: flutter doctor -v
+
+      - name: Check NDK
+        run: ls -d $ANDROID_SDK_ROOT/ndk/* || echo "No NDK found"
+
+      - name: Generate Locale Config
+        run: ./scripts/generate-locale-config.sh
+
+      - name: Install dependencies
+        run: |
+          flutter pub get --suppress-analytics
+          # Проверяем, есть ли зависимости, требующие генерации кода
+          if grep -q "build_runner" pubspec.yaml; then
+            flutter pub run build_runner build --delete-conflicting-outputs
+          fi
+
+      - name: Build APK
+        run: flutter build apk --release --verbose --suppress-analytics --no-pub
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: alpaka-msg-apk
+          path: build/app/outputs/flutter-apk/app-release.apk
