@@ -33,10 +33,8 @@ abstract class AppConfig {
   static const String appOpenUrlScheme = 'online.alpakasoft.msg';
   static const String appSsoUrlScheme = 'online.alpakasoft.msg.auth';
 
-  static const String sourceCodeUrl =
-      'https://alpakasoft.online';
-  static const String supportUrl =
-      'https://alpakasoft.online/support';
+  static const String sourceCodeUrl = 'https://alpakasoft.online';
+  static const String supportUrl = 'https://alpakasoft.online/support';
   static const String changelogUrl = 'https://alpakasoft.online/changelog/';
 
   static const Set<String> defaultReactions = {'👍', '❤️', '😂', '😮', '😢'};
