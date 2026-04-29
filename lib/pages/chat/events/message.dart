@@ -1,6 +1,5 @@
 import 'dart:ui' as ui;
 
-import 'package:emoji_picker_flutter/emoji_picker_flutter.dart';
 import 'package:alpaka_msg/config/setting_keys.dart';
 import 'package:alpaka_msg/config/themes.dart';
 import 'package:alpaka_msg/l10n/l10n.dart';
@@ -12,6 +11,7 @@ import 'package:alpaka_msg/utils/string_color.dart';
 import 'package:alpaka_msg/widgets/avatar.dart';
 import 'package:alpaka_msg/widgets/matrix.dart';
 import 'package:alpaka_msg/widgets/member_actions_popup_menu_button.dart';
+import 'package:emoji_picker_flutter/emoji_picker_flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:matrix/matrix.dart';
@@ -325,17 +325,17 @@ class Message extends StatelessWidget {
                                             child: switch (fileSendingStatus) {
                                               FileSendingStatus
                                                   .generatingThumbnail =>
-                                                Icon(
+                                                const Icon(
                                                   Icons.compress_outlined,
                                                   size: 14,
                                                 ),
                                               FileSendingStatus.encrypting =>
-                                                Icon(
+                                                const Icon(
                                                   Icons.lock_outlined,
                                                   size: 14,
                                                 ),
                                               FileSendingStatus.uploading =>
-                                                Icon(
+                                                const Icon(
                                                   Icons.upload_outlined,
                                                   size: 14,
                                                 ),

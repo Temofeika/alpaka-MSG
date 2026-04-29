@@ -40,7 +40,7 @@ class SearchFooter extends StatelessWidget {
                   L10n.of(
                     context,
                   ).chatSearchedUntil(searchedUntil.localizedTime(context)),
-                  style: TextStyle(fontSize: 10.5),
+                  style: const TextStyle(fontSize: 10.5),
                 ),
               ),
             TextButton.icon(
@@ -50,11 +50,9 @@ class SearchFooter extends StatelessWidget {
               ),
               onPressed: isLoading ? null : onStartSearch,
               icon: isLoading
-                  ? SizedBox.square(
+                  ? const SizedBox.square(
                       dimension: 18,
-                      child: const CircularProgressIndicator.adaptive(
-                        strokeWidth: 2,
-                      ),
+                      child: CircularProgressIndicator.adaptive(strokeWidth: 2),
                     )
                   : const Icon(Icons.arrow_downward_outlined),
               label: Text(L10n.of(context).searchMore),

@@ -1,10 +1,10 @@
 import 'dart:async';
 
-import 'package:device_info_plus/device_info_plus.dart';
 import 'package:alpaka_msg/config/setting_keys.dart';
 import 'package:alpaka_msg/l10n/l10n.dart';
 import 'package:alpaka_msg/utils/platform_infos.dart';
 import 'package:alpaka_msg/widgets/adaptive_dialogs/show_ok_cancel_alert_dialog.dart';
+import 'package:device_info_plus/device_info_plus.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';

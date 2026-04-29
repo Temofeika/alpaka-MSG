@@ -285,7 +285,7 @@ class ChatListItem extends StatelessWidget {
                                 const SizedBox(width: 4),
                                 Text(
                                   L10n.of(context).thread,
-                                  style: TextStyle(fontSize: 11),
+                                  style: const TextStyle(fontSize: 11),
                                 ),
                               ],
                             ),

@@ -1,10 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:file_picker/file_picker.dart';
 import 'package:alpaka_msg/l10n/l10n.dart';
 import 'package:alpaka_msg/pages/new_group/new_group_view.dart';
 import 'package:alpaka_msg/utils/file_selector.dart';
 import 'package:alpaka_msg/widgets/matrix.dart';
+import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:matrix/matrix.dart' as sdk;

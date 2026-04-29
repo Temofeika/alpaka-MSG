@@ -1,6 +1,5 @@
 import 'dart:async';
 
-import 'package:device_info_plus/device_info_plus.dart';
 import 'package:alpaka_msg/l10n/l10n.dart';
 import 'package:alpaka_msg/pages/new_private_chat/new_private_chat_view.dart';
 import 'package:alpaka_msg/pages/new_private_chat/qr_scanner_modal.dart';
@@ -9,6 +8,7 @@ import 'package:alpaka_msg/utils/fluffy_share.dart';
 import 'package:alpaka_msg/utils/platform_infos.dart';
 import 'package:alpaka_msg/utils/url_launcher.dart';
 import 'package:alpaka_msg/widgets/matrix.dart';
+import 'package:device_info_plus/device_info_plus.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:matrix/matrix.dart';

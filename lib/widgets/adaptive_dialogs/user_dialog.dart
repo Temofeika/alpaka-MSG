@@ -90,7 +90,7 @@ class UserDialog extends StatelessWidget {
                           displayname,
                           maxLines: 1,
                           overflow: .ellipsis,
-                          style: TextStyle(fontSize: 16),
+                          style: const TextStyle(fontSize: 16),
                         ),
                         const SizedBox(height: 8),
                         HoverBuilder(
@@ -164,7 +164,7 @@ class UserDialog extends StatelessWidget {
 
               if (statusMsg != null)
                 ConstrainedBox(
-                  constraints: BoxConstraints(maxHeight: 200),
+                  constraints: const BoxConstraints(maxHeight: 200),
                   child: Scrollbar(
                     thumbVisibility: true,
                     trackVisibility: true,

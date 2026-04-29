@@ -1,8 +1,6 @@
 import 'dart:async';
 import 'dart:convert';
 
-import 'package:collection/collection.dart';
-import 'package:desktop_notifications/desktop_notifications.dart';
 import 'package:alpaka_msg/l10n/l10n.dart';
 import 'package:alpaka_msg/utils/client_manager.dart';
 import 'package:alpaka_msg/utils/init_with_restore.dart';
@@ -13,6 +11,8 @@ import 'package:alpaka_msg/utils/voip_plugin.dart';
 import 'package:alpaka_msg/widgets/adaptive_dialogs/show_ok_cancel_alert_dialog.dart';
 import 'package:alpaka_msg/widgets/alpaka_msg_app.dart';
 import 'package:alpaka_msg/widgets/future_loading_dialog.dart';
+import 'package:collection/collection.dart';
+import 'package:desktop_notifications/desktop_notifications.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';

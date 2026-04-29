@@ -1,10 +1,10 @@
 import 'dart:io';
 
-import 'package:chewie/chewie.dart';
 import 'package:alpaka_msg/utils/localized_exception_extension.dart';
 import 'package:alpaka_msg/utils/matrix_sdk_extensions/event_extension.dart';
 import 'package:alpaka_msg/utils/platform_infos.dart';
 import 'package:alpaka_msg/widgets/blur_hash.dart';
+import 'package:chewie/chewie.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:matrix/matrix.dart';

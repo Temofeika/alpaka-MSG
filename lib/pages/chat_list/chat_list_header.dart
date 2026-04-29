@@ -1,7 +1,6 @@
 import 'package:alpaka_msg/config/themes.dart';
 import 'package:alpaka_msg/l10n/l10n.dart';
 import 'package:alpaka_msg/pages/chat_list/chat_list.dart';
-import 'package:alpaka_msg/pages/chat_list/client_chooser_button.dart';
 import 'package:alpaka_msg/utils/sync_status_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:matrix/matrix.dart';

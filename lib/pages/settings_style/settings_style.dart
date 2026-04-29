@@ -1,9 +1,9 @@
-import 'package:file_picker/file_picker.dart';
 import 'package:alpaka_msg/config/setting_keys.dart';
 import 'package:alpaka_msg/utils/account_config.dart';
 import 'package:alpaka_msg/utils/file_selector.dart';
 import 'package:alpaka_msg/widgets/future_loading_dialog.dart';
 import 'package:alpaka_msg/widgets/theme_builder.dart';
+import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
 
 import '../../widgets/matrix.dart';

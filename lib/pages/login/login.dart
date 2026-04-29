@@ -107,6 +107,7 @@ class LoginController extends State<Login> {
 
   Future<void> _checkWellKnown(String userId) async {
     return; // Disable well-known check to prevent homeserver changes
+    // ignore: dead_code
     if (mounted) setState(() => usernameError = null);
     if (!userId.isValidMatrixId) return;
     final oldHomeserver = widget.client.homeserver;

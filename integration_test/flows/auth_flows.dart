@@ -23,11 +23,11 @@ extension AuthFlows on FluffyChatTester {
 
   Future<void> logout() async {
     await ensureLoggedIn();
-    await tapOn(Key('accounts_and_settings_buttons'));
+    await tapOn(const Key('accounts_and_settings_buttons'));
     await tapOn('Settings');
     await scrollUntilVisible('Logout');
     await tapOn('Logout');
-    await tapOn(Key('ok_cancel_alert_dialog_ok_button'));
+    await tapOn(const Key('ok_cancel_alert_dialog_ok_button'));
     await waitFor('Sign in');
   }
 

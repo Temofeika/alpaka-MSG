@@ -1,6 +1,5 @@
 import 'dart:ui';
 
-import 'package:dynamic_color/dynamic_color.dart';
 import 'package:alpaka_msg/config/setting_keys.dart';
 import 'package:alpaka_msg/config/themes.dart';
 import 'package:alpaka_msg/l10n/l10n.dart';
@@ -11,6 +10,7 @@ import 'package:alpaka_msg/widgets/avatar.dart';
 import 'package:alpaka_msg/widgets/layouts/max_width_body.dart';
 import 'package:alpaka_msg/widgets/matrix.dart';
 import 'package:alpaka_msg/widgets/mxc_image.dart';
+import 'package:dynamic_color/dynamic_color.dart';
 import 'package:flutter/material.dart';
 import 'package:matrix/matrix.dart';
 
@@ -87,7 +87,7 @@ class SettingsStyleView extends StatelessWidget {
                 }
                 return GridView.builder(
                   shrinkWrap: true,
-                  physics: NeverScrollableScrollPhysics(),
+                  physics: const NeverScrollableScrollPhysics(),
                   gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
                     maxCrossAxisExtent: 64,
                   ),

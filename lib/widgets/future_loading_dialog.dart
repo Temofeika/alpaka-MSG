@@ -1,9 +1,9 @@
 import 'dart:async';
 
-import 'package:async/async.dart';
 import 'package:alpaka_msg/l10n/l10n.dart';
 import 'package:alpaka_msg/utils/localized_exception_extension.dart';
 import 'package:alpaka_msg/widgets/adaptive_dialogs/adaptive_dialog_action.dart';
+import 'package:async/async.dart';
 import 'package:flutter/material.dart';
 import 'package:matrix/matrix_api_lite/utils/logs.dart';
 

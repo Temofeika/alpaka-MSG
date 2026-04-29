@@ -135,7 +135,7 @@ class PublicRoomDialog extends StatelessWidget {
                                   ' - ',
                               maxLines: 1,
                               overflow: .ellipsis,
-                              style: TextStyle(fontSize: 16),
+                              style: const TextStyle(fontSize: 16),
                             ),
                             const SizedBox(height: 8),
                             if (roomLink != null)
@@ -210,7 +210,7 @@ class PublicRoomDialog extends StatelessWidget {
                   ),
                   if (topic != null && topic.isNotEmpty)
                     ConstrainedBox(
-                      constraints: BoxConstraints(maxHeight: 200),
+                      constraints: const BoxConstraints(maxHeight: 200),
                       child: Scrollbar(
                         thumbVisibility: true,
                         trackVisibility: true,

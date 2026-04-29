@@ -1,11 +1,6 @@
 import 'dart:async';
 import 'dart:io';
 
-import 'package:collection/collection.dart';
-import 'package:desktop_drop/desktop_drop.dart';
-import 'package:device_info_plus/device_info_plus.dart';
-import 'package:emoji_picker_flutter/emoji_picker_flutter.dart';
-import 'package:file_picker/file_picker.dart';
 import 'package:alpaka_msg/config/setting_keys.dart';
 import 'package:alpaka_msg/config/themes.dart';
 import 'package:alpaka_msg/l10n/l10n.dart';
@@ -28,6 +23,11 @@ import 'package:alpaka_msg/widgets/adaptive_dialogs/show_text_input_dialog.dart'
 import 'package:alpaka_msg/widgets/future_loading_dialog.dart';
 import 'package:alpaka_msg/widgets/matrix.dart';
 import 'package:alpaka_msg/widgets/share_scaffold_dialog.dart';
+import 'package:collection/collection.dart';
+import 'package:desktop_drop/desktop_drop.dart';
+import 'package:device_info_plus/device_info_plus.dart';
+import 'package:emoji_picker_flutter/emoji_picker_flutter.dart';
+import 'package:file_picker/file_picker.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';

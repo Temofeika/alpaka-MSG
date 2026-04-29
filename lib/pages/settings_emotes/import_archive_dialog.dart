@@ -1,12 +1,12 @@
 import 'dart:async';
 
-import 'package:archive/archive.dart';
-import 'package:collection/collection.dart';
 import 'package:alpaka_msg/l10n/l10n.dart';
 import 'package:alpaka_msg/pages/settings_emotes/settings_emotes.dart';
 import 'package:alpaka_msg/utils/client_manager.dart';
 import 'package:alpaka_msg/widgets/adaptive_dialogs/show_ok_cancel_alert_dialog.dart';
 import 'package:alpaka_msg/widgets/matrix.dart';
+import 'package:archive/archive.dart';
+import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:matrix/matrix.dart';

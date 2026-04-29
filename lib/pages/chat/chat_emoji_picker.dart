@@ -1,7 +1,7 @@
-import 'package:emoji_picker_flutter/emoji_picker_flutter.dart';
 import 'package:alpaka_msg/config/themes.dart';
 import 'package:alpaka_msg/l10n/l10n.dart';
 import 'package:alpaka_msg/pages/chat/sticker_picker_dialog.dart';
+import 'package:emoji_picker_flutter/emoji_picker_flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:matrix/matrix.dart';
 

@@ -81,7 +81,7 @@ class ClientChooserButton extends StatelessWidget {
         value: SettingsAction.support,
         child: Row(
           children: [
-            Icon(Icons.favorite, color: Colors.red),
+            const Icon(Icons.favorite, color: Colors.red),
             const SizedBox(width: 18),
             Text(L10n.of(context).supportFluffyChat),
           ],
@@ -173,7 +173,7 @@ class ClientChooserButton extends StatelessWidget {
         borderRadius: BorderRadius.circular(99),
         color: Colors.transparent,
         child: PopupMenuButton<Object>(
-          key: Key('accounts_and_settings_buttons'),
+          key: const Key('accounts_and_settings_buttons'),
           tooltip: 'Accounts and settings',
           popUpAnimationStyle: AlpakaThemes.isColumnMode(context)
               ? AnimationStyle.noAnimation

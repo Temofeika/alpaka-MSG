@@ -1,5 +1,3 @@
-import 'package:async/async.dart' show Result;
-import 'package:cross_file/cross_file.dart';
 import 'package:alpaka_msg/config/app_config.dart';
 import 'package:alpaka_msg/l10n/l10n.dart';
 import 'package:alpaka_msg/utils/localized_exception_extension.dart';
@@ -9,6 +7,8 @@ import 'package:alpaka_msg/utils/platform_infos.dart';
 import 'package:alpaka_msg/utils/size_string.dart';
 import 'package:alpaka_msg/widgets/adaptive_dialogs/adaptive_dialog_action.dart';
 import 'package:alpaka_msg/widgets/adaptive_dialogs/dialog_text_field.dart';
+import 'package:async/async.dart' show Result;
+import 'package:cross_file/cross_file.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:matrix/matrix.dart' hide Result;

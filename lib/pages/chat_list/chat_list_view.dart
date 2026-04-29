@@ -49,7 +49,7 @@ class ChatListView extends StatelessWidget {
                     !controller.isSearchMode &&
                         controller.activeSpaceId == null &&
                         !AlpakaThemes.isColumnMode(context)
-                    ? StartChatFab()
+                    ? const StartChatFab()
                     : const SizedBox.shrink(),
               ),
             ),

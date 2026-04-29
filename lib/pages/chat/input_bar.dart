@@ -1,9 +1,9 @@
-import 'package:emoji_picker_flutter/emoji_picker_flutter.dart';
 import 'package:alpaka_msg/config/app_config.dart';
 import 'package:alpaka_msg/config/setting_keys.dart';
 import 'package:alpaka_msg/l10n/l10n.dart';
 import 'package:alpaka_msg/utils/markdown_context_builder.dart';
 import 'package:alpaka_msg/widgets/mxc_image.dart';
+import 'package:emoji_picker_flutter/emoji_picker_flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:matrix/matrix.dart';
@@ -384,7 +384,7 @@ class InputBar extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     return Autocomplete<Map<String, String?>>(
-      key: Key('chat_input_field'),
+      key: const Key('chat_input_field'),
       focusNode: focusNode,
       textEditingController: controller,
       optionsBuilder: getSuggestions,

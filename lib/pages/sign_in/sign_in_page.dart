@@ -29,8 +29,9 @@ class SignInPage extends StatelessWidget {
             leading:
                 state.loginLoading.connectionState == ConnectionState.waiting
                 ? CloseButton(
-                    onPressed: () =>
-                        viewModel.setLoginLoading(AsyncSnapshot.nothing()),
+                    onPressed: () => viewModel.setLoginLoading(
+                      const AsyncSnapshot.nothing(),
+                    ),
                   )
                 : BackButton(onPressed: Navigator.of(context).pop),
             backgroundColor: theme.colorScheme.surface,
@@ -195,7 +196,7 @@ class SignInPage extends StatelessWidget {
                     ),
                   )
                 else
-                  Center(child: CircularProgressIndicator.adaptive()),
+                  const Center(child: CircularProgressIndicator.adaptive()),
               ],
             ),
           ),

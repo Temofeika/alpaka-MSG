@@ -1,4 +1,3 @@
-import 'package:collection/collection.dart';
 import 'package:alpaka_msg/config/themes.dart';
 import 'package:alpaka_msg/l10n/l10n.dart';
 import 'package:alpaka_msg/pages/chat/chat.dart';
@@ -8,6 +7,7 @@ import 'package:alpaka_msg/pages/chat/typing_indicators.dart';
 import 'package:alpaka_msg/utils/account_config.dart';
 import 'package:alpaka_msg/utils/matrix_sdk_extensions/filtered_timeline_extension.dart';
 import 'package:alpaka_msg/utils/platform_infos.dart';
+import 'package:collection/collection.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
@@ -68,7 +68,9 @@ class ChatEventList extends StatelessWidget {
                         ? null
                         : controller.requestFuture,
                     icon: timeline.isRequestingFuture
-                        ? CircularProgressIndicator.adaptive(strokeWidth: 2)
+                        ? const CircularProgressIndicator.adaptive(
+                            strokeWidth: 2,
+                          )
                         : const Icon(Icons.arrow_downward_outlined),
                     label: Text(L10n.of(context).loadMore),
                   ),
@@ -105,7 +107,9 @@ class ChatEventList extends StatelessWidget {
                           ? null
                           : controller.requestHistory,
                       icon: timeline.isRequestingHistory
-                          ? CircularProgressIndicator.adaptive(strokeWidth: 2)
+                          ? const CircularProgressIndicator.adaptive(
+                              strokeWidth: 2,
+                            )
                           : const Icon(Icons.arrow_upward_outlined),
                       label: Text(L10n.of(context).loadMore),
                     ),

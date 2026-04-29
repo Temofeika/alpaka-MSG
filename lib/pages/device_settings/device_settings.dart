@@ -1,11 +1,11 @@
-import 'package:async/async.dart' show Result;
-import 'package:collection/collection.dart' show IterableExtension;
 import 'package:alpaka_msg/l10n/l10n.dart';
 import 'package:alpaka_msg/pages/device_settings/device_settings_view.dart';
 import 'package:alpaka_msg/pages/key_verification/key_verification_dialog.dart';
 import 'package:alpaka_msg/widgets/adaptive_dialogs/show_ok_cancel_alert_dialog.dart';
 import 'package:alpaka_msg/widgets/adaptive_dialogs/show_text_input_dialog.dart';
 import 'package:alpaka_msg/widgets/future_loading_dialog.dart';
+import 'package:async/async.dart' show Result;
+import 'package:collection/collection.dart' show IterableExtension;
 import 'package:flutter/material.dart';
 import 'package:matrix/encryption.dart';
 import 'package:matrix/matrix.dart' hide Result;

@@ -1,3 +1,4 @@
+// ignore_for_file: dead_code
 import 'package:alpaka_msg/config/setting_keys.dart';
 import 'package:alpaka_msg/l10n/l10n.dart';
 import 'package:alpaka_msg/pages/intro/flows/restore_backup_flow.dart';
@@ -85,7 +86,7 @@ class IntroPage extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: .center,
                 children: [
-                  CircularProgressIndicator.adaptive(),
+                  const CircularProgressIndicator.adaptive(),
                   if (loggingInToHomeserver != null)
                     Text(L10n.of(context).logInTo(loggingInToHomeserver)),
                 ],

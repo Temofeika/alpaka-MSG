@@ -139,7 +139,7 @@ class AdaptiveIconTextButton extends StatelessWidget {
     final color = Theme.of(context).colorScheme.secondary;
     return Expanded(
       child: AdaptiveDialogInkWell(
-        padding: EdgeInsets.all(8.0),
+        padding: const EdgeInsets.all(8.0),
         onTap: onTap,
         child: Column(
           mainAxisSize: .min,

@@ -1,10 +1,10 @@
-import 'package:collection/collection.dart';
 import 'package:alpaka_msg/config/setting_keys.dart';
 import 'package:alpaka_msg/utils/code_highlight_theme.dart';
 import 'package:alpaka_msg/utils/event_checkbox_extension.dart';
 import 'package:alpaka_msg/widgets/avatar.dart';
 import 'package:alpaka_msg/widgets/future_loading_dialog.dart';
 import 'package:alpaka_msg/widgets/mxc_image.dart';
+import 'package:collection/collection.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_linkify/flutter_linkify.dart';

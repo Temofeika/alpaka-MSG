@@ -1,7 +1,5 @@
 import 'dart:ui' as ui;
 
-import 'package:badges/badges.dart';
-import 'package:desktop_drop/desktop_drop.dart';
 import 'package:alpaka_msg/config/setting_keys.dart';
 import 'package:alpaka_msg/config/themes.dart';
 import 'package:alpaka_msg/l10n/l10n.dart';
@@ -20,6 +18,8 @@ import 'package:alpaka_msg/widgets/future_loading_dialog.dart';
 import 'package:alpaka_msg/widgets/matrix.dart';
 import 'package:alpaka_msg/widgets/mxc_image.dart';
 import 'package:alpaka_msg/widgets/unread_rooms_badge.dart';
+import 'package:badges/badges.dart';
+import 'package:desktop_drop/desktop_drop.dart';
 import 'package:flutter/material.dart';
 import 'package:matrix/matrix.dart';
 

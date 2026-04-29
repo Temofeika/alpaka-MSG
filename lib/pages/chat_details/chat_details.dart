@@ -1,5 +1,3 @@
-import 'package:collection/collection.dart';
-import 'package:file_picker/file_picker.dart';
 import 'package:alpaka_msg/l10n/l10n.dart';
 import 'package:alpaka_msg/pages/chat_details/chat_details_view.dart';
 import 'package:alpaka_msg/pages/settings/settings.dart';
@@ -10,6 +8,8 @@ import 'package:alpaka_msg/widgets/adaptive_dialogs/show_modal_action_popup.dart
 import 'package:alpaka_msg/widgets/adaptive_dialogs/show_text_input_dialog.dart';
 import 'package:alpaka_msg/widgets/future_loading_dialog.dart';
 import 'package:alpaka_msg/widgets/matrix.dart';
+import 'package:collection/collection.dart';
+import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:matrix/matrix.dart';

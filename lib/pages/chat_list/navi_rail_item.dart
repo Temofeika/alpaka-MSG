@@ -1,7 +1,7 @@
-import 'package:badges/badges.dart';
 import 'package:alpaka_msg/config/app_config.dart';
 import 'package:alpaka_msg/widgets/hover_builder.dart';
 import 'package:alpaka_msg/widgets/unread_rooms_badge.dart';
+import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
 import 'package:matrix/matrix.dart';
 

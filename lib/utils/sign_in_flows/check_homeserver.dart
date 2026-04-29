@@ -19,7 +19,7 @@ Future<void> connectToHomeserverFlow(
   void Function(AsyncSnapshot<bool>) setState,
   bool signUp,
 ) async {
-  setState(AsyncSnapshot.waiting());
+  setState(const AsyncSnapshot.waiting());
   try {
     final homeserverInput = homeserverData.name!;
     var homeserver = Uri.parse(homeserverInput);
@@ -65,14 +65,14 @@ Future<void> connectToHomeserverFlow(
       pathSegments.removeLast();
       pathSegments.add('login');
       context.go('/${pathSegments.join('/')}', extra: client);
-      setState(AsyncSnapshot.withData(ConnectionState.done, true));
+      setState(const AsyncSnapshot.withData(ConnectionState.done, true));
       return;
     }
 
     await AppSettings.defaultHomeserver.setItem(homeserverInput);
 
     if (context.mounted) {
-      setState(AsyncSnapshot.withData(ConnectionState.done, true));
+      setState(const AsyncSnapshot.withData(ConnectionState.done, true));
       context.go('/backup');
     }
   } catch (e, s) {

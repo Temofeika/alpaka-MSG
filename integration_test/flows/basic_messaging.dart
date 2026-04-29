@@ -16,8 +16,8 @@ extension on FluffyChatTester {
 
     await tapOn(ChatFlows.groupChatName);
     const testMessage = 'Hello from integration test!';
-    await enterText(Key('chat_input_field'), testMessage);
-    await tapOn(Key('send_button'));
+    await enterText(const Key('chat_input_field'), testMessage);
+    await tapOn(const Key('send_button'));
     await waitFor(testMessage);
   }
 }

@@ -113,8 +113,8 @@ class SpacesNavigationRail extends StatelessWidget {
                     ),
                   ),
                   if (AlpakaThemes.isColumnMode(context))
-                    Padding(
-                      padding: const EdgeInsets.all(12.0),
+                    const Padding(
+                      padding: EdgeInsets.all(12.0),
                       child: StartChatFab(),
                     ),
                 ],

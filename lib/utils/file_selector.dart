@@ -1,7 +1,7 @@
-import 'package:file_picker/file_picker.dart';
-import 'package:file_selector/file_selector.dart';
 import 'package:alpaka_msg/widgets/app_lock.dart';
 import 'package:alpaka_msg/widgets/future_loading_dialog.dart';
+import 'package:file_picker/file_picker.dart';
+import 'package:file_selector/file_selector.dart';
 import 'package:flutter/widgets.dart';
 
 Future<List<XFile>> selectFiles(

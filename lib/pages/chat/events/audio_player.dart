@@ -1,13 +1,13 @@
 import 'dart:async';
 import 'dart:io';
 
-import 'package:async/async.dart';
 import 'package:alpaka_msg/config/app_config.dart';
 import 'package:alpaka_msg/config/themes.dart';
 import 'package:alpaka_msg/utils/error_reporter.dart';
 import 'package:alpaka_msg/utils/file_description.dart';
 import 'package:alpaka_msg/utils/localized_exception_extension.dart';
 import 'package:alpaka_msg/utils/url_launcher.dart';
+import 'package:async/async.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_linkify/flutter_linkify.dart';

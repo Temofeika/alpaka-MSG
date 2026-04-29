@@ -71,14 +71,20 @@ abstract class AppRoutes {
       routes: [
         GoRoute(
           path: 'sign_in',
-          pageBuilder: (context, state) =>
-              defaultPageBuilder(context, state, SignInPage(signUp: false)),
+          pageBuilder: (context, state) => defaultPageBuilder(
+            context,
+            state,
+            const SignInPage(signUp: false),
+          ),
           redirect: (context, state) => '/home',
         ),
         GoRoute(
           path: 'sign_up',
-          pageBuilder: (context, state) =>
-              defaultPageBuilder(context, state, SignInPage(signUp: true)),
+          pageBuilder: (context, state) => defaultPageBuilder(
+            context,
+            state,
+            const SignInPage(signUp: true),
+          ),
           redirect: (context, state) => '/home',
         ),
         GoRoute(
@@ -284,7 +290,7 @@ abstract class AppRoutes {
                           pageBuilder: (context, state) => defaultPageBuilder(
                             context,
                             state,
-                            SignInPage(signUp: false),
+                            const SignInPage(signUp: false),
                           ),
                           redirect: loggedOutRedirect,
                         ),
@@ -293,7 +299,7 @@ abstract class AppRoutes {
                           pageBuilder: (context, state) => defaultPageBuilder(
                             context,
                             state,
-                            SignInPage(signUp: true),
+                            const SignInPage(signUp: true),
                           ),
                           redirect: loggedOutRedirect,
                         ),

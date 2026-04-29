@@ -1,7 +1,7 @@
 import 'dart:convert';
 
-import 'package:async/async.dart';
 import 'package:alpaka_msg/utils/platform_infos.dart';
+import 'package:async/async.dart';
 import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
 import 'package:matrix/matrix_api_lite/utils/logs.dart';

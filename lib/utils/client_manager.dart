@@ -1,13 +1,13 @@
 import 'dart:io';
 
-import 'package:collection/collection.dart';
-import 'package:desktop_notifications/desktop_notifications.dart';
 import 'package:alpaka_msg/config/setting_keys.dart';
 import 'package:alpaka_msg/l10n/l10n.dart';
 import 'package:alpaka_msg/utils/custom_http_client.dart';
 import 'package:alpaka_msg/utils/custom_image_resizer.dart';
 import 'package:alpaka_msg/utils/init_with_restore.dart';
 import 'package:alpaka_msg/utils/platform_infos.dart';
+import 'package:collection/collection.dart';
+import 'package:desktop_notifications/desktop_notifications.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:flutter_vodozemac/flutter_vodozemac.dart' as vod;

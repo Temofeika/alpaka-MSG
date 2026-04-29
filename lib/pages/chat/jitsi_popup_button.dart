@@ -168,7 +168,7 @@ class JitsiPopupButton extends StatelessWidget {
       icon: Badge(
         label: Text(l10n.live),
         isLabelVisible: activeJitsiCalls.isNotEmpty,
-        child: Icon(Icons.video_call_outlined),
+        child: const Icon(Icons.video_call_outlined),
       ),
     );
   }

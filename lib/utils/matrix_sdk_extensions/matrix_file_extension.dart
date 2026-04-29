@@ -1,6 +1,6 @@
-import 'package:file_picker/file_picker.dart';
 import 'package:alpaka_msg/l10n/l10n.dart';
 import 'package:alpaka_msg/utils/size_string.dart';
+import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:matrix/matrix.dart';
 import 'package:share_plus/share_plus.dart';

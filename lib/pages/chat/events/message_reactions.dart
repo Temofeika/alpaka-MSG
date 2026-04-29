@@ -1,9 +1,9 @@
-import 'package:collection/collection.dart' show IterableExtension;
 import 'package:alpaka_msg/config/app_config.dart';
 import 'package:alpaka_msg/widgets/avatar.dart';
 import 'package:alpaka_msg/widgets/future_loading_dialog.dart';
 import 'package:alpaka_msg/widgets/matrix.dart';
 import 'package:alpaka_msg/widgets/mxc_image.dart';
+import 'package:collection/collection.dart' show IterableExtension;
 import 'package:flutter/material.dart';
 import 'package:matrix/matrix.dart';
 

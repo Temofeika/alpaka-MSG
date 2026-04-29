@@ -1,6 +1,6 @@
-import 'package:async/async.dart' as async;
 import 'package:alpaka_msg/utils/size_string.dart';
 import 'package:alpaka_msg/widgets/future_loading_dialog.dart';
+import 'package:async/async.dart' as async;
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:matrix/matrix.dart';

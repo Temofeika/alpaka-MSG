@@ -1,7 +1,5 @@
 import 'dart:async';
 
-import 'package:collection/collection.dart';
-import 'package:cross_file/cross_file.dart';
 import 'package:alpaka_msg/config/app_config.dart';
 import 'package:alpaka_msg/l10n/l10n.dart';
 import 'package:alpaka_msg/pages/chat_list/chat_list_view.dart';
@@ -16,6 +14,8 @@ import 'package:alpaka_msg/widgets/adaptive_dialogs/show_text_input_dialog.dart'
 import 'package:alpaka_msg/widgets/avatar.dart';
 import 'package:alpaka_msg/widgets/future_loading_dialog.dart';
 import 'package:alpaka_msg/widgets/share_scaffold_dialog.dart';
+import 'package:collection/collection.dart';
+import 'package:cross_file/cross_file.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_shortcuts_new/flutter_shortcuts_new.dart';
@@ -442,7 +442,7 @@ class ChatListController extends State<ChatList>
     );
 
     if (DateTime.now().difference(lastSeenSupportBanner) >=
-        Duration(days: 6 * 7)) {
+        const Duration(days: 6 * 7)) {
       final theme = Theme.of(context);
       final messenger = ScaffoldMessenger.of(context);
       messenger.showMaterialBanner(
@@ -657,7 +657,7 @@ class ChatListController extends State<ChatList>
               child: Row(
                 mainAxisSize: .min,
                 children: [
-                  Icon(Icons.bookmark_add_outlined),
+                  const Icon(Icons.bookmark_add_outlined),
                   const SizedBox(width: 12),
                   Text(L10n.of(context).addTag),
                 ],
@@ -669,7 +669,7 @@ class ChatListController extends State<ChatList>
               child: Row(
                 mainAxisSize: .min,
                 children: [
-                  Icon(Icons.bookmark_remove_outlined),
+                  const Icon(Icons.bookmark_remove_outlined),
                   const SizedBox(width: 12),
                   Text(L10n.of(context).removeTag),
                 ],

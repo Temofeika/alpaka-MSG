@@ -1,7 +1,6 @@
 import 'dart:async';
 import 'dart:convert';
 
-import 'package:collection/collection.dart';
 import 'package:alpaka_msg/config/app_config.dart';
 import 'package:alpaka_msg/config/themes.dart';
 import 'package:alpaka_msg/l10n/l10n.dart';
@@ -14,6 +13,7 @@ import 'package:alpaka_msg/widgets/avatar.dart';
 import 'package:alpaka_msg/widgets/future_loading_dialog.dart';
 import 'package:alpaka_msg/widgets/hover_builder.dart';
 import 'package:alpaka_msg/widgets/matrix.dart';
+import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:matrix/matrix.dart' as sdk;
@@ -402,7 +402,7 @@ class _SpaceViewState extends State<SpaceView> {
         actions: [
           if (isAdmin)
             IconButton(
-              icon: Icon(Icons.add_outlined),
+              icon: const Icon(Icons.add_outlined),
               tooltip: L10n.of(context).addChatOrSubSpace,
               onPressed: () =>
                   context.go('/rooms/newgroup?space_id=${widget.spaceId}'),

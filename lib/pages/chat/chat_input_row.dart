@@ -1,4 +1,3 @@
-import 'package:emoji_picker_flutter/locales/default_emoji_set_locale.dart';
 import 'package:alpaka_msg/config/setting_keys.dart';
 import 'package:alpaka_msg/l10n/l10n.dart';
 import 'package:alpaka_msg/pages/chat/recording_input_row.dart';
@@ -8,6 +7,7 @@ import 'package:alpaka_msg/utils/platform_infos.dart';
 import 'package:alpaka_msg/widgets/avatar.dart';
 import 'package:alpaka_msg/widgets/hover_builder.dart';
 import 'package:alpaka_msg/widgets/matrix.dart';
+import 'package:emoji_picker_flutter/locales/default_emoji_set_locale.dart';
 import 'package:flutter/material.dart';
 import 'package:matrix/matrix.dart';
 
@@ -355,7 +355,7 @@ class ChatInputRow extends StatelessWidget {
                                   : () => ScaffoldMessenger.of(context)
                                         .showSnackBar(
                                           SnackBar(
-                                            margin: EdgeInsets.only(
+                                            margin: const EdgeInsets.only(
                                               bottom: height + 16,
                                               left: 16,
                                               right: 16,
@@ -381,7 +381,7 @@ class ChatInputRow extends StatelessWidget {
                             ),
                           )
                         : IconButton(
-                            key: Key('send_button'),
+                            key: const Key('send_button'),
                             tooltip: L10n.of(context).send,
                             onPressed: controller.send,
                             style: IconButton.styleFrom(

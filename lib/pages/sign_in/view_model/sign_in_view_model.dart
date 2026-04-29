@@ -1,11 +1,11 @@
 import 'dart:convert';
 
-import 'package:collection/collection.dart';
 import 'package:alpaka_msg/config/app_config.dart';
 import 'package:alpaka_msg/config/setting_keys.dart';
 import 'package:alpaka_msg/pages/sign_in/view_model/model/public_homeserver_data.dart';
 import 'package:alpaka_msg/pages/sign_in/view_model/sign_in_state.dart';
 import 'package:alpaka_msg/widgets/matrix.dart';
+import 'package:collection/collection.dart';
 import 'package:flutter/widgets.dart';
 import 'package:matrix/matrix_api_lite/utils/logs.dart';
 
@@ -15,7 +15,7 @@ class SignInViewModel extends ValueNotifier<SignInState> {
   final TextEditingController filterTextController = TextEditingController();
 
   SignInViewModel(this.matrixService, {required this.signUp})
-    : super(SignInState()) {
+    : super(const SignInState()) {
     refreshPublicHomeservers();
     filterTextController.addListener(_filterHomeservers);
   }
@@ -51,7 +51,7 @@ class SignInViewModel extends ValueNotifier<SignInState> {
   }
 
   Future<void> refreshPublicHomeservers() async {
-    value = value.copyWith(publicHomeservers: AsyncSnapshot.waiting());
+    value = value.copyWith(publicHomeservers: const AsyncSnapshot.waiting());
     final defaultHomeserverData = PublicHomeserverData(
       name: AppSettings.defaultHomeserver.value,
     );

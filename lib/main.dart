@@ -1,11 +1,11 @@
 import 'dart:isolate';
 import 'dart:ui';
 
-import 'package:collection/collection.dart';
 import 'package:alpaka_msg/config/app_config.dart';
 import 'package:alpaka_msg/utils/client_manager.dart';
 import 'package:alpaka_msg/utils/notification_background_handler.dart';
 import 'package:alpaka_msg/utils/platform_infos.dart';
+import 'package:collection/collection.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';

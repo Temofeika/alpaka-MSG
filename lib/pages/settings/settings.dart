@@ -1,7 +1,5 @@
 import 'dart:async';
 
-import 'package:collection/collection.dart';
-import 'package:file_picker/file_picker.dart';
 import 'package:alpaka_msg/l10n/l10n.dart';
 import 'package:alpaka_msg/utils/file_selector.dart';
 import 'package:alpaka_msg/utils/platform_infos.dart';
@@ -9,6 +7,8 @@ import 'package:alpaka_msg/widgets/adaptive_dialogs/show_modal_action_popup.dart
 import 'package:alpaka_msg/widgets/adaptive_dialogs/show_ok_cancel_alert_dialog.dart';
 import 'package:alpaka_msg/widgets/adaptive_dialogs/show_text_input_dialog.dart';
 import 'package:alpaka_msg/widgets/future_loading_dialog.dart';
+import 'package:collection/collection.dart';
+import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:image_picker/image_picker.dart';
