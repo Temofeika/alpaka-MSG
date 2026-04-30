@@ -47,4 +47,4 @@ runs:
         sudo rm -rf /opt/hostedtoolcache/zig
         sudo rm -rf /opt/hostedtoolcache/zulu
         sudo rm -rf /opt/hostedtoolcache/azcopy
-        echo "export CARGO_BUILD_JOBS=1" >> $GITHUB_ENV
+        echo "CARGO_BUILD_JOBS=1" >> $GITHUB_ENV

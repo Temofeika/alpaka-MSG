@@ -70,7 +70,7 @@ android {
         versionCode = flutter.versionCode
         versionName = flutter.versionName
         ndk { // Workaround for https://github.com/flutter/flutter/issues/162153#issuecomment-2612443642
-            abiFilters += listOf("armeabi-v7a", "arm64-v8a", "x86_64", "x86")
+            abiFilters += listOf("armeabi-v7a", "arm64-v8a", "x86_64")
         }
     }
 
